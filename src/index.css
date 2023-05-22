@@ -26,4 +26,8 @@
   .leftSideBg {
     background: linear-gradient(324.93deg, #007aff 0.74%, #0f70da 100%);
   }
+
+  .blueCircle {
+    background: linear-gradient(324.93deg, #0f70da 0.74%, #007aff 100%);
+  }
 }
