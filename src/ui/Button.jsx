@@ -1,7 +1,8 @@
+// eslint-disable-next-line react/prop-types
 const Button = ({ className, type, onClick, children }) => {
   return (
     <button
-      className={`rounded-2xl font-medium ${className}`}
+      className={`rounded-[5px] font-semibold text-sm ${className}`}
       type={type || "button"}
       onClick={onClick}
     >
