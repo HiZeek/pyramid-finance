@@ -5,7 +5,7 @@ import RightSide from "./components/RightSide";
 function App() {
   return (
     <Fragment>
-      <div className="flex w-full h-screen overflow-scroll">
+      <div className="flex w-full h-screen">
         <LeftSide />
         <RightSide />
       </div>
