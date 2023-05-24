@@ -8,20 +8,28 @@ import GooglePlayBadge from "../assets/GooglePlayBadge.png";
 import Google from "../assets/Google.png";
 
 const RightSide = () => {
+  const inputMain = "flex flex-col sm:flex-row gap-8 max-w-[750px]";
+  const inputContainer =
+    "flex flex-col max-w-[359px] sm:w-[348px] sm:justify-between";
+  const inputStyle =
+    "max-w-[480px] h-12 border border-[#D1D1D1] rounded-[5px] px-3 focus:outline-[#007AFF]";
+
   return (
-    <div className="w-3/5 pt-[60px] bg-white">
+    <div className="w-full pb-5 lg:w-3/5 pt-[60px] bg-white px-5 h-full">
       <div className="max-w-[750px] m-auto">
         <img src={Logo} alt="Logo" className="w-[114.84px] h-[48px]" />
         <div className="mt-[61px]">
-          <h2 className="font-semibold text-[28px]">Create account</h2>
-          <p className="text-sm font-normal mt-2">
-            For business, band or celebrity.
-          </p>
+          <div>
+            <h2 className="font-semibold text-[28px]">Create account</h2>
+            <p className="text-sm font-normal mt-2">
+              For business, band or celebrity.
+            </p>
+          </div>
           <div className="mt-14">
             <form>
               <div className="flex flex-col gap-y-6">
-                <div className="flex gap-x-8 max-w-[750px]">
-                  <div className="flex flex-col w-[359px]">
+                <div className={inputMain}>
+                  <div className={inputContainer}>
                     <label htmlFor="fname" className="text-sm font-normal">
                       First name
                     </label>
@@ -29,10 +37,10 @@ const RightSide = () => {
                       type="text"
                       id="fname"
                       name="fname"
-                      className="max-w-[358px] h-12 border border-[#D1D1D1] rounded-[5px] px-3"
+                      className={inputStyle}
                     />
                   </div>
-                  <div className="flex flex-col w-[359px]">
+                  <div className={inputContainer}>
                     <label htmlFor="lname" className="text-sm font-normal">
                       Last name
                     </label>
@@ -40,12 +48,12 @@ const RightSide = () => {
                       type="text"
                       id="lname"
                       name="lname"
-                      className="max-w-[358px] h-12 border border-[#D1D1D1] rounded-[5px] px-3"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
-                <div className="flex gap-x-8 max-w-[750px]">
-                  <div className="flex flex-col w-[359px]">
+                <div className={inputMain}>
+                  <div className={inputContainer}>
                     <label htmlFor="pnumber" className="text-sm font-normal">
                       Email or phone number
                     </label>
@@ -53,10 +61,10 @@ const RightSide = () => {
                       type="text"
                       id="pnumber"
                       name="pnumber"
-                      className="max-w-[358px] h-12 border border-[#D1D1D1] rounded-[5px] px-3"
+                      className={inputStyle}
                     />
                   </div>
-                  <div className="flex flex-col w-[359px]">
+                  <div className={inputContainer}>
                     <label htmlFor="date" className="text-sm font-normal">
                       Date of birth (MM/DD/YY)
                     </label>
@@ -64,12 +72,12 @@ const RightSide = () => {
                       type="date"
                       id="date"
                       name="date"
-                      className="max-w-[358px] h-12 border border-[#D1D1D1] rounded-[5px] px-3"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
-                <div className="flex gap-x-8 max-w-[750px]">
-                  <div className="flex flex-col w-[359px]">
+                <div className={inputMain}>
+                  <div className={inputContainer}>
                     <label htmlFor="pass" className="text-sm font-normal">
                       Password
                     </label>
@@ -77,10 +85,10 @@ const RightSide = () => {
                       type="password"
                       id="pass"
                       name="pass"
-                      className="max-w-[480px] h-12 border border-[#D1D1D1] rounded-[5px] px-3"
+                      className={inputStyle}
                     />
                   </div>
-                  <div className="flex flex-col w-[359px]">
+                  <div className={inputContainer}>
                     <label htmlFor="cpass" className="text-sm font-normal">
                       Confirm password
                     </label>
@@ -88,13 +96,13 @@ const RightSide = () => {
                       type="password"
                       id="cpass"
                       name="cpass"
-                      className="max-w-[480px] h-12 border border-[#D1D1D1] rounded-[5px] px-3"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
               </div>
               <div className="flex flex-col gap-y-4 mt-7">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col-reverse gap-7 sm:flex-row sm:justify-between lg:items-center">
                   <div>
                     <input
                       id="remember"
@@ -134,29 +142,29 @@ const RightSide = () => {
                     </a>
                   </label>
                 </div>
-                <div className="flex justify-between my-8">
+                <div className="flex flex-col sm:flex-row sm:justify-between justify-center gap-8 my-8">
                   <Button
-                    className="bg-[#007AFF] text-white py-[13px] px-[105px]"
+                    className="bg-[#007AFF] text-white py-[13px] px-4 lg:px-[65px] max-w-[358px] sm:w-[348px]"
                     type="submit"
                   >
                     Create account
                   </Button>
-                  <Button className="bg-[#2D3748] text-white py-[13px] px-[105px] flex gap-x-3">
+                  <Button className="bg-[#2D3748] text-white py-[13px] px-4 lg:px-[65px] flex justify-center items-center gap-3 max-w-[358px] sm:w-[348px]">
                     <img src={Google} alt="Google" className="w-5 h-5" />
                     Sign-in with google
                   </Button>
                 </div>
               </div>
             </form>
+            <p className="text-sm font-normal text-center">
+              Don’t have an account?{" "}
+              <a href="#" className="text-[#007AFF] cursor-pointer">
+                Log In
+              </a>
+            </p>
           </div>
-          <p className="text-sm font-normal text-center">
-            Don’t have an account?{" "}
-            <a href="#" className="text-[#007AFF] cursor-pointer">
-              Log In
-            </a>
-          </p>
         </div>
-        <div className="flex gap-x-[13px] mt-20">
+        <div className="flex justify-center lg:justify-start items-center gap-[13px] mt-20">
           <a href="http://google.com/">
             <img
               src={GooglePlayBadge}

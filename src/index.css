@@ -30,4 +30,10 @@
   .blueCircle {
     background: linear-gradient(324.93deg, #0f70da 0.74%, #007aff 100%);
   }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(/src/assets/calendar.png) no-repeat;
+    width: 35px;
+    height: 35px;
+  }
 }

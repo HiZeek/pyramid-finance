@@ -5,7 +5,7 @@ import RightSide from "./components/RightSide";
 function App() {
   return (
     <Fragment>
-      <div className="flex w-full h-full">
+      <div className="flex w-full h-[970px]">
         <LeftSide />
         <RightSide />
       </div>

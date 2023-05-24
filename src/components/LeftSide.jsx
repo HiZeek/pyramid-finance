@@ -1,21 +1,17 @@
-import Imgs from "../assets/Imgs.png";
+// import Imgs from "../assets/Imgs.png";
 import SliderDots from "../assets/SliderDots.png";
+import RightImg from "../assets/RightImg.svg";
 
 const LeftSide = () => {
   return (
-    <div className="leftSideBg w-2/5 p-16">
+    <div className="leftSideBg w-2/5 px-10 py-14 hidden h-full lg:flex flex-col justify-between">
       <p className="text-white font-semibold text-[28px] text-center max-w-[554px] m-auto">
         Social media shared today, tomorrow or by location
       </p>
-      <div className="relative flex justify-center items-center mt-[61.94px]">
-        <img
-          src={Imgs}
-          alt="Imgs"
-          className="w-[440px] h-[630.03px] relative z-10"
-        />
-        <div className="w-[593px] h-[593.03px] absolute top-0 rounded-full blueCircle" />
+      <div className="flex justify-center">
+        <img src={RightImg} alt="test" className="mt-[50px] mb-[30px]" />
       </div>
-      <div className="flex justify-center mt-[42.03px]">
+      <div className="flex justify-center">
         <img src={SliderDots} alt="SliderDot" className="w-[67px] h-5" />
       </div>
     </div>
