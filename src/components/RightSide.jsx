@@ -15,7 +15,7 @@ const RightSide = () => {
     "max-w-[480px] h-12 border border-[#D1D1D1] rounded-[5px] px-3 focus:outline-[#007AFF]";
 
   return (
-    <div className="w-full pb-5 lg:w-3/5 pt-[60px] bg-white px-5 h-full overflow-scroll">
+    <div className="w-full pb-5 lg:w-3/5 pt-[60px] bg-white px-5 h-full overflow-y-scroll">
       <div className="max-w-[750px] m-auto">
         <img src={Logo} alt="Logo" className="w-[114.84px] h-[48px]" />
         <div className="mt-[61px]">
