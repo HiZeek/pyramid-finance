@@ -10,9 +10,9 @@ import Google from "../assets/Google.png";
 const RightSide = () => {
   const inputMain = "flex flex-col sm:flex-row gap-8 max-w-[750px]";
   const inputContainer =
-    "flex flex-col max-w-[359px] sm:w-[348px] sm:justify-between";
+    "flex flex-col sm:max-w-[359px] max-[639px]:w-full sm:w-[348px] sm:justify-between";
   const inputStyle =
-    "max-w-[480px] h-12 border border-[#D1D1D1] rounded-[5px] px-3 focus:outline-[#007AFF]";
+    "sm:max-w-[480px] max-[639px]:w-full h-12 border border-[#D1D1D1] rounded-[5px] px-3 focus:outline-[#007AFF]";
 
   return (
     <div className="w-full pb-5 lg:w-3/5 pt-[60px] bg-white px-5 h-full overflow-y-auto hideBar">
@@ -144,12 +144,12 @@ const RightSide = () => {
                 </div>
                 <div className="flex flex-col sm:flex-row sm:justify-between justify-center gap-8 my-8">
                   <Button
-                    className="bg-[#007AFF] text-white py-[13px] px-4 lg:px-[65px] max-w-[358px] sm:w-[348px]"
+                    className="bg-[#007AFF] text-white py-[13px] px-4 lg:px-[50px] max-[639px]:w-full sm:max-w-[358px] sm:w-[348px]"
                     type="submit"
                   >
                     Create account
                   </Button>
-                  <Button className="bg-[#2D3748] text-white py-[13px] px-4 lg:px-[65px] flex justify-center items-center gap-3 max-w-[358px] sm:w-[348px]">
+                  <Button className="bg-[#2D3748] text-white py-[13px] px-4 lg:px-[50px] flex justify-center items-center gap-3 max-[639px]:w-full sm:max-w-[358px] sm:w-[348px]">
                     <img src={Google} alt="Google" className="w-5 h-5" />
                     Sign-in with google
                   </Button>
