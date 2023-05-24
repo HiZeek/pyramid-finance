@@ -38,6 +38,11 @@
   }
 
   .hideBar {
+    -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .hideBar::-webkit-scrollbar {
+    display: none;
   }
 }
