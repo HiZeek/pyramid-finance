@@ -9,7 +9,7 @@ const LeftSide = () => {
         Social media shared today, tomorrow or by location
       </p>
       <div className="flex justify-center">
-        <img src={RightImg} alt="test" className="mt-[50px] mb-[30px]" />
+        <img src={RightImg} alt="App Image" className="mt-[50px] mb-[30px]" />
       </div>
       <div className="flex justify-center">
         <img src={SliderDots} alt="SliderDot" className="w-[67px] h-5" />
